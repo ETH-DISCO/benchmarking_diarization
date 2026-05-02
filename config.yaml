@@ -1,0 +1,43 @@
+# Speaker Diarization Pipeline Configuration
+
+# Dataset paths
+datasets:
+  paths: #TODO add dataset path that match your file structure
+    callhome: "/itet-stor/ceblaser/net_scratch/TTS_Pipeline/tts-data-pipeline/eval_skript/dataset/callhome"
+    voxconverse: "/itet-stor/ceblaser/net_scratch/TTS_Pipeline/tts-data-pipeline/eval_skript/dataset/voxconverse"
+    ami: "/itet-stor/ceblaser/net_scratch/TTS_Pipeline/tts-data-pipeline/eval_skript/dataset/ami"
+    ali: "/itet-stor/ceblaser/net_scratch/TTS_Pipeline/tts-data-pipeline/eval_skript/dataset/ali"
+
+# Model configurations
+models:
+  nemo:
+    model_path: "nvidia/diar_streaming_sortformer_4spk-v2"
+    device: "cuda"
+  
+  pyannote:
+    model_path: "pyannote/speaker-diarization-3.1"
+    device: "cuda"
+  
+  diarizen:
+    model_path: "BUT-FIT/diarizen-wavlm-large-s80-md"
+    device: "cuda"
+  
+  pyannoteai:
+    api_endpoint: "https://api.pyannote.ai"
+    device: "cuda"
+
+# Output paths
+paths:
+  results_base: "predictions"
+  manifests: "predictions/manifests"
+  evaluation_results: "evaluation_results"
+
+# Processing settings
+processing:
+  batch_size: 1
+  override_predictions: false
+
+# Evaluation settings
+evaluation:
+  collar_seconds: 0.25
+  skip_overlap: false

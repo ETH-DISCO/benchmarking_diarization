@@ -1,0 +1,11 @@
+name: diarizen
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.10
+  - torchvision==0.16.1
+  - pytorch-cuda=12.1
+  - torchaudio==2.1.1
+  - pytorch==2.1.1
+prefix: /itet-stor/ceblaser/net_scratch/conda_envs/diarizen
