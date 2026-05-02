@@ -52,7 +52,7 @@ We evaluated five diarization systems across 196.6 hours of multilingual audio. 
 - No single model wins across all languages — model choice depends on deployment scenario
 - Sortformer v2 achieves exceptional computational efficiency (214.3x real-time) while maintaining competitive accuracy
 
-For full analysis, see the [thesis](https://arxiv.org/abs/2509.26177.pdf).
+For full analysis, see the [paper](https://arxiv.org/abs/2509.26177.pdf).
 
 ## How to Use
 
