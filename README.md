@@ -434,8 +434,6 @@ All metrics are computed as **rates** (not absolute durations) per file, then ag
 
 ## Citation
 
-If you use this platform in your research, please cite:
-
 ```bibtex
 @article{lanzendorfer2025benchmarking,
   title={Benchmarking Diarization Models},
