@@ -1,4 +1,4 @@
-# Benchmarking Diarization Models
+# Benchmarking Diarization Models [📜Paper](https://arxiv.org/abs/2509.26177)
 
 An open-source evaluation platform for comparing speaker diarization systems out-of-the-box, across multiple datasets, languages, and acoustic conditions.
 
